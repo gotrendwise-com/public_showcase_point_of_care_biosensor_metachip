@@ -1,0 +1,112 @@
+{
+  "project_name": "SCOPE-NAR Point-of-Care SPR Metasurface Biosensor",
+  "application": "Handheld Clinical Optical Biosensor for Cardiovascular Troponin, Sepsis, and Blood Biomarkers",
+  "material": "GOLD (Au) + MONOLAYER GRAPHENE",
+  "substrate": "OPTICAL_FUSED_SILICA_QUARTZ",
+  "target_thickness_nm": 45.0,
+  "critical_dimension_nm": 40.0,
+  "min_design_rule_cd_nm": 40.0,
+  "primary_feature_width_nm": 130.0,
+  "mask_file": "point_of_care_biosensor_mask.gds",
+  "process_steps": [
+    {
+      "step_number": 1,
+      "title": "Substrate Surface Preparation (Optical Grade Fused Silica Wafer)",
+      "chamber": "Wet Bench Cleanroom Class 100",
+      "protocol": [
+        "Piranha clean: H2SO4:H2O2 (3:1 volume ratio) at 120\u00b0C for 20 minutes to eliminate all particulate and organic residues.",
+        "Cascade deionized (DI) water rinse until bath resistivity reaches 18.2 MOhm-cm.",
+        "Surface activation via Oxygen Plasma (100 W, 20 sccm O2, 0.2 mbar for 3 minutes) to maximize surface hydrophilicity.",
+        "Dehydration hotplate bake at 180\u00b0C for 20 minutes under nitrogen purge."
+      ]
+    },
+    {
+      "step_number": 2,
+      "title": "Adhesion Layer & Ultra-Thin Gold (Au) Plasmonic Film Deposition",
+      "equipment": "Angstrom Engineering EvoVac Ultra-High Vacuum (UHV) E-Beam Evaporator",
+      "parameters": {
+        "base_pressure_torr": 2.5e-08,
+        "adhesion_metal": "Titanium (Ti) / Chromium (Cr)",
+        "adhesion_thickness_nm": 3.0,
+        "adhesion_deposition_rate_a_s": 0.5,
+        "active_plasmonic_metal": "Gold (Au, 99.999% Puratronic)",
+        "gold_thickness_nm": 45.0,
+        "gold_deposition_rate_a_s": 1.0,
+        "substrate_temperature_c": 20.0,
+        "film_roughness_target_rq_nm": "< 0.4 nm (verified by Atomic Force Microscopy)"
+      }
+    },
+    {
+      "step_number": 3,
+      "title": "CVD Monolayer Graphene Wet Transfer (Gate-Tunable Sensing Layer)",
+      "equipment": "Graphene Transfer Wet Station & Critical Point Dryer",
+      "parameters": {
+        "graphene_source": "CVD Monolayer Graphene on Copper Foil (Grolltex)",
+        "support_polymer": "PMMA 950k A4 (300 nm, baked at 150\u00b0C for 5 min)",
+        "copper_etchant": "Ammonium Persulfate (NH4)2S2O8 0.1M for 4 hours",
+        "transfer_target": "Au-coated fused silica wafer",
+        "pmma_removal": "Warm acetone bath at 50\u00b0C for 30 minutes followed by IPA rinse",
+        "raman_verification": "I_2D / I_G > 2.1, D-band defect peak undetectable"
+      }
+    },
+    {
+      "step_number": 4,
+      "title": "High-Resolution Nanopatterning (Electron-Beam Lithography / DUV Stepper)",
+      "equipment": "Raith EBPG5200 100kV Electron Beam Lithography System",
+      "resist": "ZEP520A High-Resolution Positive Resist",
+      "parameters": {
+        "resist_thickness_nm": 120.0,
+        "spin_speed_rpm": 4500,
+        "soft_bake": "180\u00b0C hotplate bake for 180 seconds",
+        "beam_energy_kv": 100.0,
+        "beam_current_pa": 250.0,
+        "exposure_dose_uc_cm2": 260.0,
+        "reticle_mask": "point_of_care_biosensor_mask.gds",
+        "developer": "ZED-N50 (n-Amyl Acetate) for 60 seconds at 21\u00b0C",
+        "stopper": "MIBK / IPA (9:1) for 30 seconds"
+      }
+    },
+    {
+      "step_number": 5,
+      "title": "Argon Ion Beam Milling (IBM) & ICP Dry Etch",
+      "equipment": "Oxford Instruments Ionfab 300 Plus Ion Beam Etcher",
+      "parameters": {
+        "process_gas": "Pure Argon (Ar, 99.9999%)",
+        "beam_voltage_v": 350.0,
+        "beam_current_ma": 85.0,
+        "acceleration_voltage_v": 150.0,
+        "substrate_tilt_deg": 10.0,
+        "platen_rotation_rpm": 12.0,
+        "gold_etch_rate_nm_min": 18.5,
+        "nominal_milling_time_min": 2.45,
+        "endpoint_detection": "Secondary Ion Mass Spectrometry (SIMS) monitor",
+        "post_etch_clean": "Oxygen plasma ash (300 W, 5 min) to remove cross-linked ZEP resist"
+      }
+    },
+    {
+      "step_number": 6,
+      "title": "Self-Assembled Monolayer (SAM) & Bio-Receptor Functionalization",
+      "chamber": "Bio-Chemical Surface Engineering Cleanroom Bay",
+      "protocol": [
+        "Thiolation: Submerge chip in 10 mM 11-Mercaptoundecanoic acid (11-MUA) in anhydrous ethanol for 18 hours in darkness to form a dense self-assembled monolayer (-COOH terminated).",
+        "Rinse thoroughly with ethanol and ultrapure DI water; dry under gentle N2 stream.",
+        "Carboxyl Activation: Treat with freshly prepared 0.4 M EDC (1-ethyl-3-(3-dimethylaminopropyl)carbodiimide) and 0.1 M NHS (N-hydroxysuccinimide) in 10 mM MES buffer (pH 5.5) for 25 minutes.",
+        "Antibody Conjugation: Incubate with Anti-Cardiac Troponin I (cTnI) monoclonal antibodies (50 ug/mL in PBS pH 7.4) for 2 hours at room temperature.",
+        "Surface Blocking: Quench unreacted NHS esters with 1.0 M Ethanolamine-HCl (pH 8.5) for 10 minutes followed by 1% Bovine Serum Albumin (BSA) in PBS to eliminate non-specific binding."
+      ]
+    },
+    {
+      "step_number": 7,
+      "title": "Microfluidic Cartridge Integration (Capillary Blood/Serum Chamber)",
+      "equipment": "Karl Suss MicroTec PDMS Plasma Bonder & Capillary Fluidics Assembly",
+      "parameters": {
+        "channel_material": "Optical-grade Dow Sylgard 184 Silicone Elastomer (PDMS, 10:1 ratio)",
+        "channel_dimensions": "Height = 50 um, Width = 200 um, Length = 12 mm",
+        "fluidic_flow_mode": "Passive Capillary Flow (zero external pump required, volume = 5.0 uL whole blood)",
+        "surface_treatment": "Oxygen Plasma 50 W for 30s to irreversibly bond PDMS to Metasurface Chip",
+        "integrated_filter": "Sub-micrometer leukocyte/erythrocyte separation membrane at inlet port",
+        "operating_temperature_c": "15\u00b0C to 40\u00b0C (ambient field deployment)"
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "analyte_name": "Cardiac Troponin I (cTnI) & C-Reactive Protein (CRP)",
+  "delta_n_input": 0.005,
+  "resonance_wavelength_nm": 850.0,
+  "resonance_frequency_thz": 352.697,
+  "resonance_shift_dlambda_nm": 2.65,
+  "resonance_shift_df_ghz": -1096.1673,
+  "fwhm_nm": 1.35,
+  "q_factor": 629.63,
+  "wavelength_sensitivity_nm_per_riu": 530.0,
+  "frequency_sensitivity_ghz_per_riu": -219233.47,
+  "figure_of_merit_fom_riu_inv": 392.59,
+  "limit_of_detection_lod_riu": 5.66e-05,
+  "fano_asymmetry_q": 0.0,
+  "clinical_feasibility_grade": "A+ CLINICAL GRADE"
+}

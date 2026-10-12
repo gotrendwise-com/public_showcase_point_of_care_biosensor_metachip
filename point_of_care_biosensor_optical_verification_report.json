@@ -1,0 +1,889 @@
+{
+  "compiler_version": "2.0.0",
+  "timestamp": "2026-10-12 04:37:44",
+  "specs": {
+    "project_name": "Point of Care SPR Biosensor Metasurface Chip",
+    "project_title": "Point-of-Care Surface Plasmon Resonance & Quasi-BIC Metasurface Biosensor Chip",
+    "application": "Handheld Point-of-Care Rapid Clinical Diagnostics (Cardiovascular, Sepsis, Diabetes & Viral)",
+    "wavelength_nm": 850.0,
+    "target_metric": "absorption",
+    "target_value": 0.98,
+    "material": "au",
+    "substrate": "sio2",
+    "cladding": "air",
+    "period_nm": 520.0,
+    "height_nm": 45.0,
+    "ridge_width_nm": 130.0,
+    "theta_deg": 0.0,
+    "polarization": "TM",
+    "min_feature_size_nm": 40.0,
+    "min_gap_nm": 40.0,
+    "max_aspect_ratio": 5.0,
+    "target_biomarker": "Cardiac Troponin I (cTnI) & C-Reactive Protein (CRP)",
+    "analyte_delta_n": 0.005,
+    "graphene_chemical_potential_ev": 0.25,
+    "raw_prompt": "Design a point-of-care medical biosensor metasurface chip for blood protein and cardiac troponin detection at 850nm"
+  },
+  "optical_constants": {
+    "target_wavelength_nm": 850.0,
+    "gold_n": 0.167,
+    "gold_k": 5.33,
+    "substrate_n": 1.4525000000000001,
+    "substrate_k": 0.0,
+    "graphene_sigma_siemens": "5.9828e-05 + -5.3865e-07j"
+  },
+  "optimized_nanostructure": {
+    "period_nm": 520.0,
+    "ridge_width_nm": 130.0,
+    "gold_height_nm": 45.0,
+    "duty_cycle": 0.25,
+    "cleanroom_cd_nm": 40.0
+  },
+  "biosensing_performance_scorecard": {
+    "analyte_name": "Cardiac Troponin I (cTnI) & C-Reactive Protein (CRP)",
+    "delta_n_input": 0.005,
+    "resonance_wavelength_nm": 850.0,
+    "resonance_frequency_thz": 352.697,
+    "resonance_shift_dlambda_nm": 2.65,
+    "resonance_shift_df_ghz": -1096.1673,
+    "fwhm_nm": 1.35,
+    "q_factor": 629.63,
+    "wavelength_sensitivity_nm_per_riu": 530.0,
+    "frequency_sensitivity_ghz_per_riu": -219233.47,
+    "figure_of_merit_fom_riu_inv": 392.59,
+    "limit_of_detection_lod_riu": 5.66e-05,
+    "fano_asymmetry_q": 0.0,
+    "clinical_feasibility_grade": "A+ CLINICAL GRADE"
+  },
+  "perturbation_analysis": {
+    "fractional_freq_shift": -0.003162901307966707,
+    "delta_omega_rad_s": -7009181183523.1875,
+    "fractional_wavelength_shift": 0.003162901307966707,
+    "confinement_factor_analyte": 1.0
+  },
+  "gstc_surface_boundary": {
+    "reflectance": 0.036838,
+    "transmittance": 0.948445,
+    "sheet_absorption": 0.014717,
+    "energy_conservation": 1.0
+  },
+  "drc_compliance": {
+    "compliant": true,
+    "violations": []
+  },
+  "spectral_sweep_data": {
+    "blank_baseline": [
+      {
+        "wavelength_nm": 800.0,
+        "T": 0.9998
+      },
+      {
+        "wavelength_nm": 801.0,
+        "T": 0.9998
+      },
+      {
+        "wavelength_nm": 802.0,
+        "T": 0.9998
+      },
+      {
+        "wavelength_nm": 803.0,
+        "T": 0.9998
+      },
+      {
+        "wavelength_nm": 804.0,
+        "T": 0.9998
+      },
+      {
+        "wavelength_nm": 805.0,
+        "T": 0.9998
+      },
+      {
+        "wavelength_nm": 806.0,
+        "T": 0.9998
+      },
+      {
+        "wavelength_nm": 807.0,
+        "T": 0.9998
+      },
+      {
+        "wavelength_nm": 808.0,
+        "T": 0.9998
+      },
+      {
+        "wavelength_nm": 809.0,
+        "T": 0.9997
+      },
+      {
+        "wavelength_nm": 810.0,
+        "T": 0.9997
+      },
+      {
+        "wavelength_nm": 811.0,
+        "T": 0.9997
+      },
+      {
+        "wavelength_nm": 812.0,
+        "T": 0.9997
+      },
+      {
+        "wavelength_nm": 813.0,
+        "T": 0.9997
+      },
+      {
+        "wavelength_nm": 814.0,
+        "T": 0.9997
+      },
+      {
+        "wavelength_nm": 815.0,
+        "T": 0.9996
+      },
+      {
+        "wavelength_nm": 816.0,
+        "T": 0.9996
+      },
+      {
+        "wavelength_nm": 817.0,
+        "T": 0.9996
+      },
+      {
+        "wavelength_nm": 818.0,
+        "T": 0.9996
+      },
+      {
+        "wavelength_nm": 819.0,
+        "T": 0.9995
+      },
+      {
+        "wavelength_nm": 820.0,
+        "T": 0.9995
+      },
+      {
+        "wavelength_nm": 821.0,
+        "T": 0.9995
+      },
+      {
+        "wavelength_nm": 822.0,
+        "T": 0.9994
+      },
+      {
+        "wavelength_nm": 823.0,
+        "T": 0.9994
+      },
+      {
+        "wavelength_nm": 824.0,
+        "T": 0.9994
+      },
+      {
+        "wavelength_nm": 825.0,
+        "T": 0.9993
+      },
+      {
+        "wavelength_nm": 826.0,
+        "T": 0.9992
+      },
+      {
+        "wavelength_nm": 827.0,
+        "T": 0.9992
+      },
+      {
+        "wavelength_nm": 828.0,
+        "T": 0.9991
+      },
+      {
+        "wavelength_nm": 829.0,
+        "T": 0.999
+      },
+      {
+        "wavelength_nm": 830.0,
+        "T": 0.9989
+      },
+      {
+        "wavelength_nm": 831.0,
+        "T": 0.9988
+      },
+      {
+        "wavelength_nm": 832.0,
+        "T": 0.9987
+      },
+      {
+        "wavelength_nm": 833.0,
+        "T": 0.9985
+      },
+      {
+        "wavelength_nm": 834.0,
+        "T": 0.9983
+      },
+      {
+        "wavelength_nm": 835.0,
+        "T": 0.9981
+      },
+      {
+        "wavelength_nm": 836.0,
+        "T": 0.9978
+      },
+      {
+        "wavelength_nm": 837.0,
+        "T": 0.9974
+      },
+      {
+        "wavelength_nm": 838.0,
+        "T": 0.997
+      },
+      {
+        "wavelength_nm": 839.0,
+        "T": 0.9964
+      },
+      {
+        "wavelength_nm": 840.0,
+        "T": 0.9956
+      },
+      {
+        "wavelength_nm": 841.0,
+        "T": 0.9946
+      },
+      {
+        "wavelength_nm": 842.0,
+        "T": 0.9932
+      },
+      {
+        "wavelength_nm": 843.0,
+        "T": 0.9912
+      },
+      {
+        "wavelength_nm": 844.0,
+        "T": 0.988
+      },
+      {
+        "wavelength_nm": 845.0,
+        "T": 0.9828
+      },
+      {
+        "wavelength_nm": 846.0,
+        "T": 0.9734
+      },
+      {
+        "wavelength_nm": 847.0,
+        "T": 0.9537
+      },
+      {
+        "wavelength_nm": 848.0,
+        "T": 0.9018
+      },
+      {
+        "wavelength_nm": 849.0,
+        "T": 0.6995
+      },
+      {
+        "wavelength_nm": 850.0,
+        "T": 0.04
+      },
+      {
+        "wavelength_nm": 851.0,
+        "T": 0.6995
+      },
+      {
+        "wavelength_nm": 852.0,
+        "T": 0.9018
+      },
+      {
+        "wavelength_nm": 853.0,
+        "T": 0.9537
+      },
+      {
+        "wavelength_nm": 854.0,
+        "T": 0.9734
+      },
+      {
+        "wavelength_nm": 855.0,
+        "T": 0.9828
+      },
+      {
+        "wavelength_nm": 856.0,
+        "T": 0.988
+      },
+      {
+        "wavelength_nm": 857.0,
+        "T": 0.9912
+      },
+      {
+        "wavelength_nm": 858.0,
+        "T": 0.9932
+      },
+      {
+        "wavelength_nm": 859.0,
+        "T": 0.9946
+      },
+      {
+        "wavelength_nm": 860.0,
+        "T": 0.9956
+      },
+      {
+        "wavelength_nm": 861.0,
+        "T": 0.9964
+      },
+      {
+        "wavelength_nm": 862.0,
+        "T": 0.997
+      },
+      {
+        "wavelength_nm": 863.0,
+        "T": 0.9974
+      },
+      {
+        "wavelength_nm": 864.0,
+        "T": 0.9978
+      },
+      {
+        "wavelength_nm": 865.0,
+        "T": 0.9981
+      },
+      {
+        "wavelength_nm": 866.0,
+        "T": 0.9983
+      },
+      {
+        "wavelength_nm": 867.0,
+        "T": 0.9985
+      },
+      {
+        "wavelength_nm": 868.0,
+        "T": 0.9987
+      },
+      {
+        "wavelength_nm": 869.0,
+        "T": 0.9988
+      },
+      {
+        "wavelength_nm": 870.0,
+        "T": 0.9989
+      },
+      {
+        "wavelength_nm": 871.0,
+        "T": 0.999
+      },
+      {
+        "wavelength_nm": 872.0,
+        "T": 0.9991
+      },
+      {
+        "wavelength_nm": 873.0,
+        "T": 0.9992
+      },
+      {
+        "wavelength_nm": 874.0,
+        "T": 0.9992
+      },
+      {
+        "wavelength_nm": 875.0,
+        "T": 0.9993
+      },
+      {
+        "wavelength_nm": 876.0,
+        "T": 0.9994
+      },
+      {
+        "wavelength_nm": 877.0,
+        "T": 0.9994
+      },
+      {
+        "wavelength_nm": 878.0,
+        "T": 0.9994
+      },
+      {
+        "wavelength_nm": 879.0,
+        "T": 0.9995
+      },
+      {
+        "wavelength_nm": 880.0,
+        "T": 0.9995
+      },
+      {
+        "wavelength_nm": 881.0,
+        "T": 0.9995
+      },
+      {
+        "wavelength_nm": 882.0,
+        "T": 0.9996
+      },
+      {
+        "wavelength_nm": 883.0,
+        "T": 0.9996
+      },
+      {
+        "wavelength_nm": 884.0,
+        "T": 0.9996
+      },
+      {
+        "wavelength_nm": 885.0,
+        "T": 0.9996
+      },
+      {
+        "wavelength_nm": 886.0,
+        "T": 0.9997
+      },
+      {
+        "wavelength_nm": 887.0,
+        "T": 0.9997
+      },
+      {
+        "wavelength_nm": 888.0,
+        "T": 0.9997
+      },
+      {
+        "wavelength_nm": 889.0,
+        "T": 0.9997
+      },
+      {
+        "wavelength_nm": 890.0,
+        "T": 0.9997
+      },
+      {
+        "wavelength_nm": 891.0,
+        "T": 0.9997
+      },
+      {
+        "wavelength_nm": 892.0,
+        "T": 0.9998
+      },
+      {
+        "wavelength_nm": 893.0,
+        "T": 0.9998
+      },
+      {
+        "wavelength_nm": 894.0,
+        "T": 0.9998
+      },
+      {
+        "wavelength_nm": 895.0,
+        "T": 0.9998
+      },
+      {
+        "wavelength_nm": 896.0,
+        "T": 0.9998
+      },
+      {
+        "wavelength_nm": 897.0,
+        "T": 0.9998
+      },
+      {
+        "wavelength_nm": 898.0,
+        "T": 0.9998
+      },
+      {
+        "wavelength_nm": 899.0,
+        "T": 0.9998
+      },
+      {
+        "wavelength_nm": 900.0,
+        "T": 0.9998
+      }
+    ],
+    "analyte_shifted": [
+      {
+        "wavelength_nm": 800.0,
+        "T": 0.9998
+      },
+      {
+        "wavelength_nm": 801.0,
+        "T": 0.9998
+      },
+      {
+        "wavelength_nm": 802.0,
+        "T": 0.9998
+      },
+      {
+        "wavelength_nm": 803.0,
+        "T": 0.9998
+      },
+      {
+        "wavelength_nm": 804.0,
+        "T": 0.9998
+      },
+      {
+        "wavelength_nm": 805.0,
+        "T": 0.9998
+      },
+      {
+        "wavelength_nm": 806.0,
+        "T": 0.9998
+      },
+      {
+        "wavelength_nm": 807.0,
+        "T": 0.9998
+      },
+      {
+        "wavelength_nm": 808.0,
+        "T": 0.9998
+      },
+      {
+        "wavelength_nm": 809.0,
+        "T": 0.9998
+      },
+      {
+        "wavelength_nm": 810.0,
+        "T": 0.9998
+      },
+      {
+        "wavelength_nm": 811.0,
+        "T": 0.9997
+      },
+      {
+        "wavelength_nm": 812.0,
+        "T": 0.9997
+      },
+      {
+        "wavelength_nm": 813.0,
+        "T": 0.9997
+      },
+      {
+        "wavelength_nm": 814.0,
+        "T": 0.9997
+      },
+      {
+        "wavelength_nm": 815.0,
+        "T": 0.9997
+      },
+      {
+        "wavelength_nm": 816.0,
+        "T": 0.9997
+      },
+      {
+        "wavelength_nm": 817.0,
+        "T": 0.9997
+      },
+      {
+        "wavelength_nm": 818.0,
+        "T": 0.9996
+      },
+      {
+        "wavelength_nm": 819.0,
+        "T": 0.9996
+      },
+      {
+        "wavelength_nm": 820.0,
+        "T": 0.9996
+      },
+      {
+        "wavelength_nm": 821.0,
+        "T": 0.9996
+      },
+      {
+        "wavelength_nm": 822.0,
+        "T": 0.9995
+      },
+      {
+        "wavelength_nm": 823.0,
+        "T": 0.9995
+      },
+      {
+        "wavelength_nm": 824.0,
+        "T": 0.9995
+      },
+      {
+        "wavelength_nm": 825.0,
+        "T": 0.9994
+      },
+      {
+        "wavelength_nm": 826.0,
+        "T": 0.9994
+      },
+      {
+        "wavelength_nm": 827.0,
+        "T": 0.9993
+      },
+      {
+        "wavelength_nm": 828.0,
+        "T": 0.9993
+      },
+      {
+        "wavelength_nm": 829.0,
+        "T": 0.9992
+      },
+      {
+        "wavelength_nm": 830.0,
+        "T": 0.9991
+      },
+      {
+        "wavelength_nm": 831.0,
+        "T": 0.9991
+      },
+      {
+        "wavelength_nm": 832.0,
+        "T": 0.999
+      },
+      {
+        "wavelength_nm": 833.0,
+        "T": 0.9989
+      },
+      {
+        "wavelength_nm": 834.0,
+        "T": 0.9987
+      },
+      {
+        "wavelength_nm": 835.0,
+        "T": 0.9986
+      },
+      {
+        "wavelength_nm": 836.0,
+        "T": 0.9984
+      },
+      {
+        "wavelength_nm": 837.0,
+        "T": 0.9982
+      },
+      {
+        "wavelength_nm": 838.0,
+        "T": 0.998
+      },
+      {
+        "wavelength_nm": 839.0,
+        "T": 0.9977
+      },
+      {
+        "wavelength_nm": 840.0,
+        "T": 0.9973
+      },
+      {
+        "wavelength_nm": 841.0,
+        "T": 0.9968
+      },
+      {
+        "wavelength_nm": 842.0,
+        "T": 0.9962
+      },
+      {
+        "wavelength_nm": 843.0,
+        "T": 0.9953
+      },
+      {
+        "wavelength_nm": 844.0,
+        "T": 0.9942
+      },
+      {
+        "wavelength_nm": 845.0,
+        "T": 0.9926
+      },
+      {
+        "wavelength_nm": 846.0,
+        "T": 0.9902
+      },
+      {
+        "wavelength_nm": 847.0,
+        "T": 0.9865
+      },
+      {
+        "wavelength_nm": 848.0,
+        "T": 0.9802
+      },
+      {
+        "wavelength_nm": 849.0,
+        "T": 0.9683
+      },
+      {
+        "wavelength_nm": 850.0,
+        "T": 0.9415
+      },
+      {
+        "wavelength_nm": 851.0,
+        "T": 0.8624
+      },
+      {
+        "wavelength_nm": 852.0,
+        "T": 0.5019
+      },
+      {
+        "wavelength_nm": 853.0,
+        "T": 0.2434
+      },
+      {
+        "wavelength_nm": 854.0,
+        "T": 0.808
+      },
+      {
+        "wavelength_nm": 855.0,
+        "T": 0.9268
+      },
+      {
+        "wavelength_nm": 856.0,
+        "T": 0.9625
+      },
+      {
+        "wavelength_nm": 857.0,
+        "T": 0.9774
+      },
+      {
+        "wavelength_nm": 858.0,
+        "T": 0.985
+      },
+      {
+        "wavelength_nm": 859.0,
+        "T": 0.9893
+      },
+      {
+        "wavelength_nm": 860.0,
+        "T": 0.992
+      },
+      {
+        "wavelength_nm": 861.0,
+        "T": 0.9938
+      },
+      {
+        "wavelength_nm": 862.0,
+        "T": 0.995
+      },
+      {
+        "wavelength_nm": 863.0,
+        "T": 0.9959
+      },
+      {
+        "wavelength_nm": 864.0,
+        "T": 0.9966
+      },
+      {
+        "wavelength_nm": 865.0,
+        "T": 0.9971
+      },
+      {
+        "wavelength_nm": 866.0,
+        "T": 0.9976
+      },
+      {
+        "wavelength_nm": 867.0,
+        "T": 0.9979
+      },
+      {
+        "wavelength_nm": 868.0,
+        "T": 0.9981
+      },
+      {
+        "wavelength_nm": 869.0,
+        "T": 0.9984
+      },
+      {
+        "wavelength_nm": 870.0,
+        "T": 0.9985
+      },
+      {
+        "wavelength_nm": 871.0,
+        "T": 0.9987
+      },
+      {
+        "wavelength_nm": 872.0,
+        "T": 0.9988
+      },
+      {
+        "wavelength_nm": 873.0,
+        "T": 0.9989
+      },
+      {
+        "wavelength_nm": 874.0,
+        "T": 0.999
+      },
+      {
+        "wavelength_nm": 875.0,
+        "T": 0.9991
+      },
+      {
+        "wavelength_nm": 876.0,
+        "T": 0.9992
+      },
+      {
+        "wavelength_nm": 877.0,
+        "T": 0.9993
+      },
+      {
+        "wavelength_nm": 878.0,
+        "T": 0.9993
+      },
+      {
+        "wavelength_nm": 879.0,
+        "T": 0.9994
+      },
+      {
+        "wavelength_nm": 880.0,
+        "T": 0.9994
+      },
+      {
+        "wavelength_nm": 881.0,
+        "T": 0.9995
+      },
+      {
+        "wavelength_nm": 882.0,
+        "T": 0.9995
+      },
+      {
+        "wavelength_nm": 883.0,
+        "T": 0.9995
+      },
+      {
+        "wavelength_nm": 884.0,
+        "T": 0.9996
+      },
+      {
+        "wavelength_nm": 885.0,
+        "T": 0.9996
+      },
+      {
+        "wavelength_nm": 886.0,
+        "T": 0.9996
+      },
+      {
+        "wavelength_nm": 887.0,
+        "T": 0.9996
+      },
+      {
+        "wavelength_nm": 888.0,
+        "T": 0.9997
+      },
+      {
+        "wavelength_nm": 889.0,
+        "T": 0.9997
+      },
+      {
+        "wavelength_nm": 890.0,
+        "T": 0.9997
+      },
+      {
+        "wavelength_nm": 891.0,
+        "T": 0.9997
+      },
+      {
+        "wavelength_nm": 892.0,
+        "T": 0.9997
+      },
+      {
+        "wavelength_nm": 893.0,
+        "T": 0.9997
+      },
+      {
+        "wavelength_nm": 894.0,
+        "T": 0.9997
+      },
+      {
+        "wavelength_nm": 895.0,
+        "T": 0.9998
+      },
+      {
+        "wavelength_nm": 896.0,
+        "T": 0.9998
+      },
+      {
+        "wavelength_nm": 897.0,
+        "T": 0.9998
+      },
+      {
+        "wavelength_nm": 898.0,
+        "T": 0.9998
+      },
+      {
+        "wavelength_nm": 899.0,
+        "T": 0.9998
+      },
+      {
+        "wavelength_nm": 900.0,
+        "T": 0.9998
+      }
+    ]
+  },
+  "compilation_time_seconds": 0.037
+}
